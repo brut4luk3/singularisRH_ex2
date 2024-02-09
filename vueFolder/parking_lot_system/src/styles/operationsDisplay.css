@@ -23,6 +23,7 @@
 }
 
 .input-field.top,
+.input-field.middle,
 .input-field.bottom {
     width: 300px;
     box-sizing: border-box;
@@ -82,6 +83,8 @@ button:hover {
     padding: 10px;
     border: 1px solid yellow;
     position: relative;
+    cursor: pointer;
+
 }
 
 .grid-item:hover::after {

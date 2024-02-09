@@ -1,8 +1,7 @@
 body,
 html,
 #app {
-    margin: 0;
-    padding: 0;
+    margin-top: -20px;
     height: 100%;
     min-height: 100vh;
     width: 100%;
@@ -12,4 +11,5 @@ html,
     justify-content: center;
     align-items: center;
     font-family: 'Roboto', sans-serif;
+    overflow: hidden;
 }

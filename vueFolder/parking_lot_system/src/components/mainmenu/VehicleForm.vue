@@ -26,7 +26,6 @@ export default {
     },
     methods: {
         async submitForm() {
-            // Previne o fechamento automático do diálogo
             event.preventDefault();
 
             try {
@@ -42,12 +41,11 @@ export default {
                     throw new Error(`HTTP error! status: ${response.status}`);
                 }
 
-                // Se a operação foi bem-sucedida
                 const responseData = await response.json();
                 console.log('Success:', responseData);
                 alert('Veículo cadastrado com sucesso!');
-                this.$emit('formSubmitted'); // Emita o evento para fechar o diálogo
-                this.resetForm(); // Reseta o formulário para o estado inicial
+                this.$emit('formSubmitted');
+                this.resetForm();
             } catch (error) {
                 console.error('Error:', error);
                 alert('Falha ao cadastrar o veículo. Por favor, tente novamente.');

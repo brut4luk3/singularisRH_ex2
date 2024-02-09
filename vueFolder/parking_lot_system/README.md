@@ -1,24 +1,15 @@
-# parking_lot_system
+# Bem vindos ao esqueleto do ParkIndex! (esqueleto porque ainda não tá 100% D= )
 
-## Project setup
+## Como rodar o Django
 ```
-npm install
+cd djangoFolder
+python manage.py runserver
 ```
 
-### Compiles and hot-reloads for development
+## Como rodar o Vue.js
 ```
+cd vueFolder
+cd parking_lot_system
 npm run serve
 ```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Espero que esteja dentro das suas expectativas mas saibam que com um pouquinho mais de tempo eu poderia fazer bem melhor!

@@ -6,12 +6,6 @@
       <MainMenu @openDialog="openDialog" />
     </div>
     <operationsDisplay ref="operationsDisplay" />
-    <DialogComponent :visible="dialogVisible" @close="closeDialog">
-      <template v-slot:default>
-        <VehicleForm v-if="entity === 'Veículo'" :initialPlate="plateCardInput" @formSubmitted="formSubmitted" />
-      </template>
-    </DialogComponent>
-
   </div>
 </template>
 
@@ -19,18 +13,14 @@
 import { mapState } from 'vuex';
 import MainMenu from './MainMenu.vue';
 import operationsDisplay from './operationsDisplay.vue';
-import DialogComponent from './mainmenu/DialogComponent.vue';
-import VehicleForm from './mainmenu/VehicleForm.vue';
 
 export default {
   components: {
     MainMenu,
     operationsDisplay,
-    DialogComponent,
-    VehicleForm,
   },
   computed: {
-    ...mapState(['dialogVisible', 'entity', 'plateCardInput']), // Adicionado plateCardInput ao mapState
+    ...mapState(['dialogVisible', 'entity', 'plateCardInput']),
   },
   methods: {
     openDialog({ entity, plate }) {
@@ -41,7 +31,7 @@ export default {
     },
     formSubmitted() {
       this.closeDialog();
-      this.$refs.operationsDisplay.loadVehicles(); // Recarrega a lista de veículos após o cadastro de um novo veículo
+      this.$refs.operationsDisplay.loadVehicles();
     },
   },
 }

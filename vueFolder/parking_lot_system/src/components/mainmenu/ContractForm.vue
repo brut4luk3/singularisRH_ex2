@@ -27,7 +27,6 @@ export default {
         };
     },
     mounted() {
-        // Se estiver editando, carregue os dados existentes do contrato aqui
         if (this.contractId) {
             this.loadExistingContract();
         }
@@ -40,7 +39,7 @@ export default {
                     throw new Error('Falha ao carregar os detalhes do contrato existente');
                 }
                 const contractData = await response.json();
-                this.contract = { // Assumindo que a resposta da API corresponda à estrutura de dados do contrato
+                this.contract = {
                     contract_description: contractData.contract_description,
                     contract_max_value: contractData.contract_max_value,
                 };
@@ -72,7 +71,7 @@ export default {
                 console.log('Success:', responseData);
                 alert(`Contrato ${this.contractId ? 'atualizado' : 'cadastrado'} com sucesso!`);
                 this.$emit('formSubmitted');
-                if (!this.contractId) this.resetForm(); // Só reseta o formulário se for um cadastro novo
+                if (!this.contractId) this.resetForm();
             } catch (error) {
                 console.error('Error:', error);
                 alert('Falha ao salvar o contrato. Por favor, tente novamente.');
