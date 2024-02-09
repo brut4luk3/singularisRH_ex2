@@ -5,12 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="451cdc51-1e13-402b-a76d-491bb136d67e" name="Changes" comment="First commit">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/djangoFolder/db.ex_2" beforeDir="false" afterPath="$PROJECT_DIR$/djangoFolder/db.ex_2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/djangoFolder/ex2_app/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/djangoFolder/ex2_app/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vueFolder/parking_lot_system/src/App.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vueFolder/parking_lot_system/src/components/ParkIndex.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vueFolder/parking_lot_system/src/components/ParkIndex.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vueFolder/parking_lot_system/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/vueFolder/parking_lot_system/src/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.ex_2" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -90,7 +90,7 @@ button:hover {
     top: -30px;
     left: 50%;
     transform: translateX(-50%);
-    background-color: #333;
+    background-color: transparent;
     color: yellow;
     padding: 5px;
     border-radius: 5px;
