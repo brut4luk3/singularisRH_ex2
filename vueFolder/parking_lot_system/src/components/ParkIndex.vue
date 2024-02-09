@@ -1,16 +1,27 @@
 <template>
   <div class="park-index">
-    <h1>Park Index</h1>
-    <!-- Conteúdo da tela inicial aqui -->
+    <div class="header">
+      <h1>Seja bem vindo ao ParkIndex!</h1>
+      <h4 id="informativo">Cadastre e edite os componentes</h4>
+      <MainMenu />
+    </div>
+    <div>
+      <operationsDisplay />
+    </div>
   </div>
 </template>
 
 <script>
+import MainMenu from './MainMenu.vue'
+import operationsDisplay from './operationsDisplay.vue';
+
 export default {
   name: 'ParkIndex',
+  components: {
+    MainMenu,
+    operationsDisplay
+  }
 }
 </script>
 
-<style scoped>
-/* Estilos específicos do ParkIndex aqui */
-</style>
+<style src="@/styles/ParkIndex.css" scoped></style>

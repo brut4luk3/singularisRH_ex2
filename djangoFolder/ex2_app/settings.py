@@ -28,9 +28,11 @@ INSTALLED_APPS = [
 
     'parkIndex.apps.ParkindexConfig',
     'rest_framework',
+    'corsheaders',
 ]
 
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -39,6 +41,8 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
+
+CORS_ALLOW_ALL_ORIGINS = True # isso aqui em prod dá xabu, tô sabendo, aí nesse caso a gente bota um array com os origins permitidos
 
 ROOT_URLCONF = 'ex2_app.urls'
 

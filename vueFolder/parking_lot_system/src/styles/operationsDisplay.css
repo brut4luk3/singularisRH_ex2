@@ -1,0 +1,98 @@
+.operations-display {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.left-section {
+    flex: 1;
+}
+
+.right-section {
+    flex: 2;
+    background-color: #333;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#rightSectionTitle {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: white;
+}
+
+.input-field.top,
+.input-field.bottom {
+    width: 300px;
+    box-sizing: border-box;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ccc;
+}
+
+.input-field.top {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.input-field.bottom {
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.form-button {
+    background-color: #cacaca;
+    width: 300px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    cursor: pointer;
+    border: transparent;
+}
+
+.form-button:disabled {
+    background-color: #d5d5d5;
+}
+
+.form-button.top {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.form-button.bottom {
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+button:hover {
+    background-color: #aaaaaa;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 20px;
+}
+
+.grid-item {
+    background-color: #444;
+    color: #fff;
+    padding: 10px;
+    border: 1px solid yellow;
+    position: relative;
+}
+
+.grid-item:hover::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: yellow;
+    padding: 5px;
+    border-radius: 5px;
+    white-space: nowrap;
+}

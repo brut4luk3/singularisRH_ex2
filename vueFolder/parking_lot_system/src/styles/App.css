@@ -1,0 +1,15 @@
+body,
+html,
+#app {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(to top right, #EDEDED 50%, #27538C 50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+}
